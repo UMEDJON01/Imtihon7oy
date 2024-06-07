@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const userPasswordRef = useRef(null);
@@ -65,13 +65,15 @@ function Login() {
           >
             Sign in
           </button>
-          <button
-            className="w-full py-3 mb-4 text-black bg-[#F1F1F1] hover:bg-gray-300 rounded-lg font-bold uppercase"
-            type="button"
-            onClick={handleClick}
-          >
-            Guest user
-          </button>
+          <Link to="/">
+            <button
+              className="w-full py-3 mb-4 text-black bg-[#F1F1F1] hover:bg-gray-300 rounded-lg font-bold uppercase"
+              type="button"
+              onClick={handleClick}
+            >
+              Guest user
+            </button>
+          </Link>
           <p className="text-center text-gray-200">
             A new member?
             <NavLink
