@@ -24,7 +24,7 @@ function Register() {
       setError("User already exists");
     } else {
       localStorage.setItem("user", JSON.stringify(newUser));
-      navigate("/login");
+      navigate("/");
     }
   }
 
