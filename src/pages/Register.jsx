@@ -67,7 +67,7 @@ function Register() {
           <p className="text-center text-gray-200">
             Already a member?
             <NavLink
-              to="/login"
+              to="/"
               className="ml-2 text-[#D87D4A] hover:text-[#FBAF85] underline"
             >
               Login
